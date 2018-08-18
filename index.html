@@ -1,42 +1,100 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
     <title>Candy Collector</title>
-  </head>
+</head>
 
-  <body>
+<body>
 
     <div class="container">
 
         <div class="jumbotron">
-                <h1 class="text-center">
-                    <strong>Candy Collector</strong>
-                </h1>
-                <center>
-                <p class="lead">List Object of Game</p>
-                <p>List instructions for game</p>
-             <div class="btn-group" role="group" aria-label="Basic example">
-                    <button type="button" id="donut" class="btn btn-secondary">Donut Picture</button>
-                    <button type="button" id="cupcake" class="btn btn-secondary">Cupcake Picture</button>
-                    <button type="button" id ="lollipop" class="btn btn-secondary">Lollipop Picture</button>
-                    <button type="button" id ="candy" class="btn btn-secondary">Cotton Candy Picture</button>
-                </center>
-
-
-       
-   
- 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
+            <h1 class="text-center">
+                <strong>Candy Collector</strong>
+            </h1>
+            <center>
+                <strong>
+                    <p class="lead">-Object of the game-</p>
+                    <p>You will first be given a random number</p>
+                    <p>Click on a treat to add a specific amount of points to your total</p>
+                    <p>To win the game, you must match your total to the random number</p>
+                    <p>Each treat's value is hidden until clicked</p>
+                </strong>
+                <div class="card-deck">
+                    <div class="card">
+                        <button type="button" class="btn btn-primary">
+                            <img class="card-img-top" src="assets/images/donut.jpg" alt="Card image cap" width="50" height="200">
+                        </button>
+                    </div>
+                    <div class="card">
+                        <button type="button" class="btn btn-primary">
+                            <img class="card-img-top" src="assets/images/ice cream.jpg" alt="Card image cap" width="30" height="200">
+                        </button>
+                    </div>
+                    <div class="card">
+                        <button type="button" class="btn btn-primary">
+                            <img class="card-img-top" src="assets/images/cupcake.png" alt="Card image cap" width="50" height="200">
+                        </button>
+                    </div>
+                    <div class="card">
+                        <button type="button" class="btn btn-primary">
+                            <img class="card-img-top" src="assets/images/cottoncandy.png" alt="Card image cap" width="10" height="200">
+                        </button>
+                    </div>
+                </div>
+            </center>
+        </div>
     </div>
-</div>
-  </body>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <center>Random Number</center>
+                    </h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <center>SCORE</center>
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</br>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <center>Total:</center>
+                        <center>Calculated Amt Goes here</center>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+</body>
 
 </html>
