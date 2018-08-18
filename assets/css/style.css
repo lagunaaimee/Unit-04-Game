@@ -1,0 +1,13 @@
+body {
+    background: url("../images/background.jpg");
+    color: teal;
+    font-family: 'Merienda', cursive;
+}
+
+.jumbotron {
+    background: palevioletred;        
+}
+
+#donut {
+    background-image: url("//assets/images/donut.jpg");
+}
