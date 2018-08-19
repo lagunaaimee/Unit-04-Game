@@ -23,37 +23,57 @@ var getRandom = function (min, max) {
 }
 
 var startGame = function() {
-    var randomNumber = 0;
+    var totalCounter = 0;
 
-    totalCounter = getRandom(19, 120);
+    randomNumber = getRandom(19, 120);
 
     button.donut.value      = getRandom(1, 12);
     button.iceCream.value   = getRandom(1, 12);
     button.cupcake.value    = getRandom(1, 12);
     button.candy.value      = getRandom(1, 12);
 
+    $("#random").html(randomNumber);
+    $("#total").html(totalCounter);
+
     console.log("-----------------")
-    console.log("Your total:" + totalCounter);
+    console.log("Your total:" + randomNumber);
     console.log("Donut:" + button.donut.value + "| Ice Cream:" + button.iceCream.value + "| Cupake:" + button.cupcake.value + "| Candy:" + button.candy.value);
     console.log("-----------------")
+}
+
+var addValues = function(button) {
+    totalCounter = totalCounter + button.value;
+
+    $("#total").html(totalCounter);
+
+    checkWin();
+
+    console.log("Your Score:" + totalCounter);
+}
+
+var checkWin = function() {
+    if(totalCounter > randomNumber) {
+        alert("You lose!");
+        console.log("You lose!");
+    }
 }
 
 startGame();
 
 $("#btn1").click(function() {
-    alert("donut");
+    addValues(button.donut);
 });
 
 $("#btn2").click(function() {
-    alert("icecream");
+    addValues(button.iceCream);
 });
 
 $("#btn3").click(function() {
-    alert("cupcake");
+    addValues(button.cupcake);
 });
 
 $("#btn4").click(function() {
-    alert("candy");
+    addValues(button.candy);
 });
 
 
