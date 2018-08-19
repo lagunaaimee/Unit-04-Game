@@ -22,11 +22,13 @@
             </h1>
             <center>
                 <strong>
-                    <p class="lead">-Object of the game-</p>
+                    <h2 class="lead">-Instructions-</h2>
+                    <small>
                     <p>You will first be given a random number</p>
                     <p>Click on a treat to add a specific amount of points to your total</p>
                     <p>To win the game, you must match your total to the random number</p>
                     <p>Each treat's value is hidden until clicked</p>
+                    </small>
                 </strong>
                 <div class="card-deck">
                     <div class="card">
@@ -59,7 +61,7 @@
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">
-                        <center>Random Number</center>
+                        <center><span id="randomNumber">0</span></center>
                     </h5>
                 </div>
             </div>
@@ -70,6 +72,9 @@
                     <h5 class="card-title">
                         <center>SCORE</center>
                     </h5>
+                    Wins: <span id="winCounter">0</span>
+                </br>
+                    Losses: <span id="lossCounter">0</span>
                 </div>
             </div>
         </div>
@@ -83,17 +88,14 @@
                 <div class="card-body">
                     <h5 class="card-title">
                         <center>Total:</center>
-                        <center>Calculated Amt Goes here</center>
+                        <center><span id="totalCounter">0</span></center>
                 </div>
             </div>
         </div>
     </div>
 
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/game.js"></script>
 
 </body>
 
