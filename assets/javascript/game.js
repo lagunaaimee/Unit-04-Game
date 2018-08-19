@@ -23,7 +23,7 @@ var getRandom = function (min, max) {
 }
 
 var startGame = function() {
-    var totalCounter = 0;
+    totalCounter = 0;
 
     randomNumber = getRandom(19, 120);
 
@@ -55,6 +55,19 @@ var checkWin = function() {
     if(totalCounter > randomNumber) {
         alert("You lose!");
         console.log("You lose!");
+
+        lossCounter++;
+        $("#lossCounter").html(lossCounter);
+
+    startGame();
+    }
+    else if(totalCounter == randomNumber) {
+        alert("You Win!!");
+        console.log("You Win!!");
+
+        winCounter++;
+        $("#winCounter").html(winCounter);
+    startGame();
     }
 }
 
